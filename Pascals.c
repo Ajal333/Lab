@@ -17,4 +17,6 @@ int main(void)
         p = pow(11,i);
         printf("%d\n",p);
     }
+
+    return 0;
 }
