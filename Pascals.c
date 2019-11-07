@@ -10,7 +10,11 @@ int main(void)
     scanf("%d",&l);
     for(int i=0;i<l;i++)
     {
-         p = pow(11,i);
+        for(int j=0;j<(l-i);j++)
+        {
+            printf(" ");
+        }
+        p = pow(11,i);
         printf("%d\n",p);
     }
 }
