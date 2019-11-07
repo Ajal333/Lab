@@ -1,3 +1,4 @@
+//  To find the maximum and minimum of the given number
 #include<stdio.h>
 
 int main(void)
