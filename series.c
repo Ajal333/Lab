@@ -6,7 +6,7 @@
 double fact(double);
 int main(void)
 {
-    int c,l; float x; double t=0, sum=0 , rad=0;
+    int c,l,k=1; float x; double t=0, sum=0 , rad=0;int j=1;
     printf("1. Sine series\n");
     printf("2. Cosine series\n");
 
@@ -25,8 +25,8 @@ int main(void)
     {
         for(int i=1;i<=l;i=i+2)
         {
-            t = pow(-1,i+1) * (pow(rad,i)/fact(i));
-            sum = sum + t; 
+            t = pow(-1,j+1) * (pow(rad,i)/fact(i));
+            sum = sum + t; j++;
         }
     }
 
@@ -35,8 +35,8 @@ int main(void)
         sum = sum + 1;
         for(int i=2;i<=l;i=i+2)
         {
-            t = pow(-1,i+1) * (pow(rad,i)/fact(i));
-            sum = sum + t; 
+            t = pow(-1,k+1) * (pow(rad,i)/fact(i));
+            sum = sum + t; k++;
         }
     }
 
