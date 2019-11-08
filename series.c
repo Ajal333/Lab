@@ -35,7 +35,7 @@ int main(void)
         sum = sum + 1;
         for(int i=2;i<=l;i=i+2)
         {
-            t = pow(-1,k+1) * (pow(rad,i)/fact(i));
+            t = pow(-1,k) * (pow(rad,i)/fact(i));
             sum = sum + t; k++;
         }
     }
