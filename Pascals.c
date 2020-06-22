@@ -1,22 +1,21 @@
 //Pascals Triangle
 
-#include<stdio.h>
-#include<math.h>
-
-int main(void)
-{
-    int l,  p;
-    printf("Enter the number of rows to be print: ");
-    scanf("%d",&l);
-    for(int i=0;i<l;i++)
-    {
-        for(int j=0;j<(l-i);j++)
-        {
-            printf(" ");
-        }
-        p = pow(11,i);
-        printf("%d\n",p);
-    }
-
-    return 0;
+#include <stdio.h>
+int main() {
+   int rows, coef = 1, space, i, j;
+   printf("Enter the number of rows: ");
+   scanf("%d", &rows);
+   for (i = 0; i < rows; i++) {
+      for (space = 1; space <= rows - i; space++)
+         printf("  ");
+      for (j = 0; j <= i; j++) {
+         if (j == 0 || i == 0)
+            coef = 1;
+         else
+            coef = coef * (i - j + 1) / j;
+         printf("%4d", coef);
+      }
+      printf("\n");
+   }
+   return 0;
 }
